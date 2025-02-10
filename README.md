@@ -50,3 +50,6 @@ pico_y_placa_predictor/
 1. Clona este repositorio:
    ```bash 
    git clone https://github.com/IGRA27/Pico-Placa-Predictor.git
+
+2. Run 'pytest' for report unit test
+3. Run main.py
