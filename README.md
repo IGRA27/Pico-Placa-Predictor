@@ -5,7 +5,7 @@ Isaac Reyes
 
 ### SB 
 
-#### This project is a **predictor de Pico y Placa** which determines whether a vehicle can circulate on a specific day and time based on the regulations described in the image under /assets ![/Investigation](PicoPlacaInvestigation.png) , that describe:
+#### This project is a **predictor de Pico y Placa** which determines whether a vehicle can circulate on a specific day and time based on the regulations described in the image under /assets ![/Investigation](assets/PicoPlacaInvestigation.png) , that describe:
 
 Base legal
 
@@ -39,3 +39,14 @@ pico_y_placa_predictor/
     ├── __init__.py
     └── test_predictor.py
 
+
+## Requisitos
+
+- Python 3.7 o superior
+- [pip](https://pip.pypa.io/en/stable/) para la instalación de dependencias
+
+## Instalación
+
+1. Clona este repositorio:
+   ```bash 
+   git clone https://github.com/IGRA27/Pico-Placa-Predictor.git
