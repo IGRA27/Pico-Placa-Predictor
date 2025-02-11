@@ -45,3 +45,17 @@ def test_invalid_plate(predictor):
     """
     #Ejemplo placa sin números
     assert predictor.can_circulate("ABC-XYZ", "2025-02-10", "08:00") is True
+
+def test_invalid_date(predictor):
+    """
+    Si ingresa una fecha con formato inválido, se espera un ValueError.
+    """
+    with pytest.raises(ValueError):
+        predictor.can_circulate("ABC-1234", "FechaInvalida", "08:00")
+
+def test_invalid_time(predictor):
+    """
+    Si ingresa una hora con formato inválido, se espera un ValueError.
+    """
+    with pytest.raises(ValueError):
+        predictor.can_circulate("ABC-1234", "2025-02-10", "HoraInvalida")
