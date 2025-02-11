@@ -1,2 +1,4 @@
 python
 pytest
+#NOTA ISAAC: Unicamente para interfaz UX/UI Design, a futuro se puede integrar con consultas de LLM, langchain y langraph
+flet==0.26.0

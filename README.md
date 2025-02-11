@@ -52,9 +52,23 @@ pico_y_placa_predictor/
    git clone https://github.com/IGRA27/Pico-Placa-Predictor.git
 
 2. Run 'pytest' for report unit test
+
+## Ejecución
 3. Run python src/main.py
 4. Write what is requested
 
 
 ### Refactor by Isaac Reyes and UX/UI Design
-You can create with https://flet.dev/
+You can create with https://flet.dev/ 
+/flet
+This commit is for Finalize project
+5. Run if you are in root:
+flet run --web flet_ui/counter.py
+
+5.1 If you are inside folder flet_ui RUN>
+flet run --web counter.py
+
+6. Enter the values
+
+Thank you
+by IGRA
