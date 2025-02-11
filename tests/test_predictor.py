@@ -27,6 +27,24 @@ def test_monday_restriction(predictor):
     #Placa termina en 3 - No está restringida el lunes
     assert predictor.can_circulate("ABC-9993", "2025-02-10", "08:30") is True
 
+def test_tuesday_restriction(predictor):
+    # Martes: restricción para placas que terminan en 3 y 4.
+    assert predictor.can_circulate("BBB-1233", "2025-02-11", "08:00") is False
+    assert predictor.can_circulate("BBB-1233", "2025-02-11", "10:00") is True
+    assert predictor.can_circulate("BBB-1235", "2025-02-11", "08:30") is True
+
+def test_wednesday_restriction(predictor):
+    # Miércoles: restricción para placas que terminan en 5 y 6.
+    assert predictor.can_circulate("CCC-1235", "2025-02-12", "08:00") is False
+    assert predictor.can_circulate("CCC-1235", "2025-02-12", "10:00") is True
+    assert predictor.can_circulate("CCC-1237", "2025-02-12", "08:30") is True
+
+def test_thursday_restriction(predictor):
+    # Jueves: restricción para placas que terminan en 7 y 8.
+    assert predictor.can_circulate("DDD-1237", "2025-02-13", "08:00") is False
+    assert predictor.can_circulate("DDD-1237", "2025-02-13", "10:00") is True
+    assert predictor.can_circulate("DDD-1231", "2025-02-13", "08:30") is True
+
 def test_friday_restriction(predictor):
     """
     Viernes (day_of_week = 4) restringe dígitos 9 y 0

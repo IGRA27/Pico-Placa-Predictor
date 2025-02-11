@@ -1,14 +1,41 @@
-# Python cache
+#Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
 
-# Virtual environment
-venv/
-env/
+#Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Pytest cache
+#Pytest cache
 .cache/
+.pytest_cache/
 
-# Otros archivos de tu preferencia
+#Jupyter Notebook checkpoints - ESTO AÑADI PARA INTELIGENCIA ARTIFICIAL Y DATOS A FUTURO
+.ipynb_checkpoints
 
+#Environment folders
+.env
+.venv
+env/
+venv/
+ENV/
+
+#VSCode settings
+.vscode/
+
+#macOS - Para todo SO por eso añadi
+.DS_Store

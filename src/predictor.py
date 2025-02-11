@@ -48,7 +48,7 @@ class PicoPlacaPredictor:
         #1.Extraer el último dígito de la placa
         last_digit = self._extract_last_digit(plate)
         if last_digit is None:
-            #Si no se encuentra ningún dígito en la placa, asumimos (por decisión de diseño)
+            #Si no se encuentra ningún dígito en la placa, asumimos (por decisión de diseño) PUEDE MEJORARSE O CAMBIAR ojo, es ambiguo y no hay mas restriccion
             # que no hay restricción y retornamos True
             return True
 
